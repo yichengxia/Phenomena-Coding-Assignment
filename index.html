@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Phenomena Coding Assignment</title>  
+    </head>
+    <body>
+        <p align="center">
+        <canvas id="canvas" width="600" height="600"></canvas>
+        <script type="text/javascript" src="main.js"></script>
+        <center><h2><i>y</i> = <i>mx</i> + <i>b</i></h2>
+        Tips: (1) Click graph to draw again.<br>
+        (2) Better to keep <i>b</i> in (-30, 30) range.<br><br>
+        <label for="m"><i>m</i> = </label>
+        <input type="number" id="m" value="1"><br><br>
+        <label for="b"><i>b</i> = </label>
+        <input type="number" id="b" value="5"><br><br>
+        <button onclick="draw(document.getElementById('m').value, document.getElementById('b').value)">Draw</button>
+        <button onclick="clearAll()">Clear</button><br><br>
+        Designed by Yicheng Xia @Penn.</center>
+        </p>
+    </body>
+</html>
