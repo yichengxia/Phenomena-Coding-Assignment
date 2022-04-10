@@ -44,20 +44,32 @@ function draw(m, b) {
             ctx.fillText("y = 0", cw * 3 / 4, ch - 20);
         } else if (b == 0) {
             if (m == 1) {
-                ctx.fillText("y = x" , cw * 3 / 4, ch - 20);
+                ctx.fillText("y = x", cw * 3 / 4, ch - 20);
             } else if (m == -1) {
-                ctx.fillText("y = -x" , cw * 3 / 4, ch - 20);
+                ctx.fillText("y = -x", cw * 3 / 4, ch - 20);
             } else {
                 ctx.fillText("y = " + m + "x", cw * 3 / 4, ch - 20);
             }
         } else if (m == 1) {
-            ctx.fillText("y = x + " + b , cw * 3 / 4, ch - 20);
+            if (b < 0) {
+                ctx.fillText("y = x " + b, cw * 3 / 4, ch - 20);
+            } else {
+                ctx.fillText("y = x + " + b, cw * 3 / 4, ch - 20);
+            }
         } else if (m == 0) {
-            ctx.fillText("y = " + b , cw * 3 / 4, ch - 20);
+            ctx.fillText("y = " + b, cw * 3 / 4, ch - 20);
         } else if (m == -1) {
-            ctx.fillText("y = -x + " + b , cw * 3 / 4, ch - 20);
+            if (b < 0) {
+                ctx.fillText("y = -x " + b, cw * 3 / 4, ch - 20);
+            } else {
+                ctx.fillText("y = -x + " + b, cw * 3 / 4, ch - 20);
+            }
         } else {
-            ctx.fillText("y = " + m + "x + " + b , cw * 3 / 4, ch - 20);
+            if (b < 0) {
+                ctx.fillText("y = " + m + "x " + b, cw * 3 / 4, ch - 20);
+            } else {
+                ctx.fillText("y = " + m + "x + " + b, cw * 3 / 4, ch - 20);
+            }
         }
     }
     canvas.click();
