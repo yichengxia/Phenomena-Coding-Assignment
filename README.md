@@ -1,6 +1,6 @@
 # Phenomena Coding Assignment
 
-This is an interactive teaching tool about the linear function: y = mx + b.
+This is an interactive teaching tool about the linear function: y = mx + b. You can try it online [here](https://raw.githack.com/yichengxia/Phenomena-Coding-Assignment/main/index.html).
 
 I implemented this by:
 
